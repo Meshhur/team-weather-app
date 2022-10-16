@@ -11,7 +11,7 @@
 }
 
 .main {
-    background-color: #14314d;
+    background-color: #341694;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -33,6 +33,7 @@
 
 .title-temp {
     font-size: 2rem;
+    font-style: italic;
 }
 
 .left-side {
@@ -43,4 +44,11 @@
 .sides {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    letter-spacing: 1px;
+
+}
+
+.value {
+    font-weight: bold;
 }

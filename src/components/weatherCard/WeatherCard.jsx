@@ -9,15 +9,17 @@ import "./WeatherCard.css";
 
 
 export const WeatherCard = () => {
-
-
     const data = useWeather();
     const [weather, setWeather] = useState(null);
 
     useEffect(() => {
-        data.then(res => setWeather(res));
+        data.then(res => {
+            setWeather(res);
+        })
     }, [])
+    
     return (
+        
         <main className='main'>
             <div className="info-weather">
                 <div className="sides left-side">
@@ -44,7 +46,7 @@ const Row = ({ title, value }) => {
     return (
         <span>
             <span>{title}: </span>
-            <span>{value}</span>
+            <span className='value'>{value}</span>
         </span>
     )
 }
